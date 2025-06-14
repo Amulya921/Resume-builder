@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  overflow: auto;
+  padding: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Two-column wrapper inside app-container */
+.content-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Left (form) column */
+.left-column {
+  flex: 1;
+  max-width: 50%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  min-width: 300px;
+}
+
+/* Right (preview) column */
+.right-column {
+  flex: 1;
+  max-width: 50%;
+  background-color: #ffffff;
+  padding: 30px;
+  overflow-y: auto;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Inputs & Textareas */
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+/* Larger textareas */
+textarea {
+  height: 100px;
+}
+
+/* Button group inside form */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Primary buttons */
+.download-btn,
+.reset-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Hover state */
+.download-btn:hover,
+.reset-btn:hover {
+  background-color: #45a049;
+}
+
+/* Cover Letter link styled as button */
+.cover-letter-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.cover-letter-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Template cards */
+.template-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.template-card {
+  flex: 1 1 calc(33.333% - 10px);
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.template-card.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ATS & feedback */
+.ats-feedback {
+  margin-top: 20px;
+}
+
+.ats-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ats-btn:hover {
+  background-color: #e68900;
+}
+
+.ats-score {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.feedback-message {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Resume Preview Styling */
+.resume-preview .header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.resume-preview .header h1 {
+  font-size: 26px;
+  margin: 10px 0 5px;
+}
+
+.resume-preview .header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.resume-preview h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+.resume-preview ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.resume-preview li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+.cover-letter-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cover-letter-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-group button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-group button:hover {
+  background-color: #0056b3;
+}
+
+.cover-letter-preview {
+  margin-top: 30px;
+}
+
+.cover-letter-preview textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Optional for buttons or cards */
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  .left-column,
+  .right-column {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
