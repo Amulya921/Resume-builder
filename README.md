@@ -34,7 +34,7 @@ Supports 6 fully developed templates with a wide variety of layouts:
 ✅ Easily extendable via Template.jsx
 
 📦 Installation
-git clone https://github.com/your-username/resume-builder.git
+git clone https://github.com/Amulya921/Resume-builder.git
 cd resume-builder
 npm install
 npm run dev
