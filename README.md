@@ -1,12 +1,45 @@
-# React + Vite
+📝 Resume Builder
+A modern, intelligent Resume Builder Web App built with React 19 and Vite, offering resume templates, ATS scoring, industry-based suggestions, grammar checking, and more — everything you need to craft job-winning resumes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+🎨 6 Professional Resume Templates
+📄 PDF Download (via html2pdf.js)
+⚡ Live Preview and instant updates
+🧠 Industry-Specific Suggestions for summaries and skills
+📊 ATS Score Checker with keyword analysis
+🤖 Grammar Correction using NLP utilities
+🧑‍💼 Cover Letter Generator
+🧠 Job Matcher for relevant opportunities
+📋 Job Tracker to manage applications
+🌗 Dark/Light Theme Toggle
+💾 Autosave with LocalStorage
+📷 Optional Profile Picture Upload
 
-Currently, two official plugins are available:
+🧰 Tech Stack
+Technology	Purpose
+React 19	UI library
+Vite	Lightning-fast bundler
+Tailwind CSS	Styling
+React Router v7	Page routing
+html2pdf.js	Resume export to PDF
+Tesseract.js	OCR support (future-ready)
+Natural, Compromise	NLP features (grammar, keyword)
+LocalStorage	Persistent user data
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📸 Resume Templates
+Supports 6 fully developed templates with a wide variety of layouts:
+✅ Sidebar, Infographic, Minimalist, and Timeline views
+✅ Grammar correction built-in
+✅ Smart rendering of each resume section
+✅ Easily extendable via Template.jsx
 
-## Expanding the ESLint configuration
+📦 Installation
+git clone https://github.com/your-username/resume-builder.git
+cd resume-builder
+npm install
+npm run dev
+Open http://localhost:5173 to get started.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 License
+MIT © 2024 Amulya921. See the LICENSE file for full details.
+
